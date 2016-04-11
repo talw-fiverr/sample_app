@@ -1,3 +1,10 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
-<p>Sample App</p>
+<!--The variable part of the title is generated dynamically by ERbbundle exec rspec spec/requests/static_pages_spec.rb-->
+<% provide(:title, 'Home') %>
+<h1>Sample App</h1>
+<p>
+  This is the home page for the
+  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+  sample application.
+</p>
+
+

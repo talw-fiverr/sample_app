@@ -21,4 +21,11 @@ describe "Static pages" do
       page.should have_content('About')
     end
   end
+
+  describe "Page title" do
+    it "should have the right title'" do
+      visit '/static_pages/home'
+      page.should have_selector('title', :text => 'Home')
+    end
+  end
 end

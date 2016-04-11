@@ -1,3 +1,8 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
-<p>This is the Help page</p>
+<!--The variable part of the title is generated dynamically by ERbbundle exec rspec spec/requests/static_pages_spec.rb-->
+<% provide(:title, 'help') %>
+<h1>Sample App</h1>
+<p>
+  This is the Help page for the
+  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+  sample application.
+</p>
